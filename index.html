@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <!-- =====================SWIPER CSS============================= -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
     <!-- =====================MAIN CSS============================= -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- ====================Boxicon================================= -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>motu_patlu</title>
 </head>
 <body>
-   <!-- ===================== Side bar ============================= --> 
+   <!-- ===================== Side bar ============================= -->
+   <div class="nav_toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+   </div>
     <aside class="sidebar" id="sidebar">
         <nav class="nav">
             <div class="nav_logo">
@@ -47,6 +54,9 @@
             </div>
             <div class="btn_share">
                 <i class="uil uil-share-alt social_share"></i>
+            </div>
+            <div class="nav_close" id="nav-close">
+                <i class="uil uil-times"></i>
             </div>
         </nav>
     </aside>
@@ -83,18 +93,24 @@
             <div class="my_info grid">
                 <div class="info_item">
                     <i class="uil  uil-facebook-messenger info_icon"></i>
-                    <h3 class="info_title">Messenger _: </h3>
-                    <span class="info_subtitle">  mdtuhinhelal</span>
+                    <div>
+                        <h3 class="info_title">Messenger</h3>
+                        <span class="info_subtitle">  mdtuhinhelal</span>
+                    </div>
                 </div>
                 <div class="info_item">
                     <i class="uil  uil-whatsapp info_icon"></i>
-                    <h3 class="info_title">Whatsapp _:</h3>
-                    <span class="info_subtitle">  +8801910663569</span>
+                    <div>
+                        <h3 class="info_title">Whatsapp</h3>
+                        <span class="info_subtitle">  +8801910663569</span>
+                    </div>
                 </div>
                 <div class="info_item">
                     <i class="uil  uil-envelope-edit info_icon"></i>
-                    <h3 class="info_title">Email _:</h3>
-                    <span class="info_subtitle">  mdtuhinhelal10@gmail.com</span>
+                    <div>
+                        <h3 class="info_title">Email</h3>
+                        <span class="info_subtitle">  mdtuhinhelal10@gmail.com</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -126,7 +142,7 @@
                         <span class="about_subtitle">Online 24/7</span>
                     </div>
                 </div>
-                <a href="#cantact" class="button"> <i class="uil uil-navigator button_icon"></i>Contact Me</a>
+                <a href="#contact" class="button"> <i class="uil uil-navigator button_icon"></i>Contact Me</a>
             </div>
         </div>
     </section>
@@ -514,7 +530,7 @@
                     <img src="images/work2.jpg" alt="" class="portfolio_popup-img">
                 </div>
                 <div class="portfolio_popup-info">
-                    <div class="portfolio_popup-subtitle">Featured <span>Design</span></div>
+                    <div class="portfolio_popup-subtitle">Featured - <span>Design</span></div>
                     <div class="portfolio_popup-body">
                         <h3 class="details_title">Banner Design for web application</h3>
                     <p class="details_description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum doloribus architecto excepturi dolorem, beatae al
@@ -531,12 +547,296 @@
         </div>
     </div>
 
+<!-- =============================== Service ====================== -->
+
+    <section class="services section" id="services">
+        <h2 data-heading="Services" class="section_title">What I Offer</h2>
+
+        <div class="services_container container grid">
+            <div class="services_content">
+                <div>
+                    <i class="uil uil-web-grid services_icon"></i>
+                    <h3 class="services_title">Web <br>Designer</h3>
+                </div>
+
+                <span class="services_button">
+                    View more <i class="uil uil-arrow-right services_button-icon"></i>
+                </span>
+                <div class="services_modal">
+                    <div class="services_modal-content">
+                        <i class="uil uil-times services_modal-close"></i>
+                        <h3 class="services_modal-title">Web Designer</h3>
+                        <p class="services_modal-description"> Services with more than 2 years of epxperience. Providing quaality work to clients and companies </p>
+
+                        <ul class="services_modal-services grid">
+                            <li class="services_modal-service">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">I develop the user interface.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">I page development.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">I create ux element interactions.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">I position your company brand.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">Design and mockups of products for companies.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services_content">
+                <div>
+                    <i class="uil uil-edit services_icon"></i>
+                    <h3 class="services_title"> Graphic <br>Designer</h3>
+                </div>
+
+                <span class="services_button">
+                    View more <i class="uil uil-arrow-right services_button-icon"></i>
+                </span>
+
+                <div class="services_modal">
+                    <div class="services_modal-content">
+                        <i class="uil uil-times services_modal-close"></i>
+                        <h3 class="services_modal-title">Graphic design</h3>
+                        <p class="services_modal-description"> Services with more than 2 years of epxperience. Providing quaality work to clients and companies </p>
+
+                        <ul class="services_modal-services grid">
+                            <li class="services_modal-services">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">I design Business caed.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">I design logo for your brand.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">I design banner.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">I design book cover.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">Photo editing.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services_content">
+                <div>
+                    <i class="uil uil-arrow services_icon"></i>
+                    <h3 class="services_title">Web <br>Developer</h3>
+                </div>
+
+                <span class="services_button">
+                    View more <i class="uil uil-arrow-right services_button-icon"></i>
+                </span>
+
+                <div class="services_modal">
+                    <div class="services_modal-content">
+                        <i class="uil uil-times services_modal-close"></i>
+                        <h3 class="services_modal-title">Web Developer</h3>
+                        <p class="services_modal-description"> Services with more than 2 years of epxperience. Providing quaality work to clients and companies </p>
+
+                        <ul class="services_modal-services grid">
+                            <li class="services_modal-service">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">Node.js.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">MogoDB.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">MySQL.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">Firewall.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-check-circle services_modal-icon"></i>
+                                <p class="services_modal-info">Design backend for website.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+<!-- ==================Tastimonials ================================= -->
+<section class="testimonials section">
+    <h2 data-heading="My clients" class="section_title">Testimonals</h2>
+
+    <div class="testimonals_container conteainer swiper">
+        <div class="swiper-wrapper">
+            <div class="testimonal_card swiper-slide">
+                <div class="testimonal_quote">
+                    <i class='bx bxs-quote-alt-left'></i>
+                </div>
+                <p class="testimonal_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perferendis!</p>
+                <h3 class="testimonal_date">March 10. 2022</h3>
+                <div class="testimonal_profile">
+                    <img src="images/clind1.jpg" alt="" class="testimonal_profile-img">
+                    <div class="testimonal_profile-data">
+                        <span class="testimonal_profile-name"> Ana Moris</span>
+                        <span class="testimonal_profile-detail"> Director of a company</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonal_card swiper-slide">
+                <div class="testimonal_quote">
+                    <i class='bx bxs-quote-alt-left'></i>
+                </div>
+                <p class="testimonal_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perferendis!</p>
+                <h3 class="testimonal_date">June 12. 2022</h3>
+                <div class="testimonal_profile">
+                    <img src="images/clind2.jpg" alt="" class="testimonal_profile-img">
+                    <div class="testimonal_profile-data">
+                        <span class="testimonal_profile-name"> Mario Crich</span>
+                        <span class="testimonal_profile-detail"> Funder of a company</span>
+                    </div>
+                </div>
+            </div>
 
 
+            <div class="testimonal_card swiper-slide">
+                <div class="testimonal_quote">
+                    <i class='bx bxs-quote-alt-left'></i>
+                </div>
+                <p class="testimonal_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perferendis!</p>
+                <h3 class="testimonal_date">January 1. 2023</h3>
+                <div class="testimonal_profile">
+                    <img src="images/clind3.jpg" alt="" class="testimonal_profile-img">
+                    <div class="testimonal_profile-data">
+                        <span class="testimonal_profile-name"> Jonso moris</span>
+                        <span class="testimonal_profile-detail"> Owner of a company</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
 
+<!-- ============================ Contact =========================== -->
+<section class="contact section" id="contact">
+    <h2 data-heading="Get in touch" class="section_title">Contact Me</h2>
 
+    <div class="contact_container container grid">
+        <div class="contact_content">
+            <div class="contact_info">
+                <div class="contact_card">
+                    <i class="uil uil-envelope-edit contact_card-icon"></i>
+                    <h3 class="contact_card-title">Email</h3>
+                    <span class="contact_card-data">  mdtuhinhelal10@gmail.com</span>
+                    <span class="contact_button">
+                        Write me <i class="uil uil-arrow-right contact_button-icon"></i>
+                    </span>
+                </div>
+
+                <div class="contact_card">
+                    <i class="uil uil-whatsapp contact_card-icon"></i>
+                    <h3 class="contact_card-title">Whatsapp</h3>
+                    <span class="contact_card-data">  +8801910663569</span>
+                    <span class="contact_button">
+                        Write me <i class="uil uil-arrow-right contact_button-icon"></i>
+                    </span>
+                </div>
+
+                <div class="contact_card">
+                    <i class="uil uil-facebook-messenger contact_card-icon"></i>
+                    <h3 class="contact_card-title">Messenger</h3>
+                    <span class="contact_card-data">  mdtuhinhelal</span>
+                    <span class="contact_button">
+                        Write me <i class="uil uil-arrow-right contact_button-icon"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact_content">
+            <form action="" class="contact_form">
+                <div class="input_container">
+                    <input type="text" class="input">
+                    <label for="">Username</label>
+                    <span>Username</span>
+                </div>
+                <div class="input_container">
+                    <input type="email" class="input">
+                    <label for="">Email</label>
+                    <span>Email</span>
+                </div>
+                <div class="input_container">
+                    <input type="tel" class="input">
+                    <label for="">Phone</label>
+                    <span>Phone</span>
+                </div>
+                <div class="input_container textarea">
+                    <textarea name="" id="" class="input"></textarea>
+                    <label for="">Message</label>
+                    <span>Message</span>
+                </div>
+                <button type="submit" class="button"> <i class="uil uil-navigator button_icon"></i>Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ==============   Footer section ==========================-->
+<footer class="footer">
+    <div class="footer_bg">
+        <div class="footer_container container grid">
+            <div>
+                <h1 class="footer_title">Tuhin</h1>
+                <span class="footer_subtitel">Frontend developer</span>
+            </div>
+
+            <ul class="footer_links">
+                <li>
+                    <a href="#services"  class="footer_link">Services</a>
+                </li>
+                <li>
+                    <a href="#work"  class="footer_link">Work</a>
+                </li>
+                <li>
+                    <a href="#contact"  class="footer_link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="footer_socials">
+                <a href="https://www.facebook.com/"terget="blank" class="footer_social">
+                    <i class="uil  uil-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/"terget="blank" class="footer_social">
+                    <i class="uil  uil-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/"terget="blank" class="footer_social">
+                    <i class="uil  uil-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <p class="footer_copy">&#169; Motu_Patlu. All right reserved</p>
+    </div>
+</footer>
 
 
    </main>
@@ -550,7 +850,12 @@
     <!-- ===================== Mixitup JS=========================== -->
 
     <script src="mixitup.min.js"></script>
+
+    <!-- ====================== Swiper Js =========================== -->
+    <script src="swiper-bundle.min.js"></script>
+
     <!-- =====================MAIN JS============================= -->
     <script src="script.js"></script>
+
 </body>
 </html>
