@@ -1015,7 +1015,6 @@ social_share{
     color: var(--titel-color);
     font-weight: var(--font-medium);
     font-size: var(--normal-font-size);
-    letter-spacing: .5rem;
     outline: none;
     border-radius: .50rem;
     transition: .3s;
@@ -1091,6 +1090,7 @@ textarea.input{
     width: 50%;
     opacity: 1;
 }
+
 
 
 /* =================== Footer ============================= */
@@ -1420,7 +1420,7 @@ textarea.input{
         padding: 0;
     }
     .testimonals_container{
-        width:400px;
+        width:350px;
         margin-left: auto !important;
         margin-right: auto !important;
     }

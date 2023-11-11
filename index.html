@@ -774,28 +774,28 @@
         </div>
 
         <div class="contact_content">
-            <form action="" class="contact_form">
+            <form class="contact_form" id="contact_form">
                 <div class="input_container">
-                    <input type="text" class="input">
+                    <input type="text" class="input name">
                     <label for="">Username</label>
                     <span>Username</span>
                 </div>
                 <div class="input_container">
-                    <input type="email" class="input">
+                    <input type="email" id="email" class="input email">
                     <label for="">Email</label>
                     <span>Email</span>
                 </div>
                 <div class="input_container">
-                    <input type="tel" class="input">
+                    <input type="number" class="input number">
                     <label for="">Phone</label>
                     <span>Phone</span>
                 </div>
                 <div class="input_container textarea">
-                    <textarea name="" id="" class="input"></textarea>
+                    <textarea name="" id="" class="input message"></textarea>
                     <label for="">Message</label>
                     <span>Message</span>
                 </div>
-                <button type="submit" class="button"> <i class="uil uil-navigator button_icon"></i>Send Message</button>
+                <button onClick="send()" type="submit" class="button"> <i class="uil uil-navigator button_icon"></i>Send Message</button>
             </form>
         </div>
     </div>
@@ -852,10 +852,17 @@
     <script src="mixitup.min.js"></script>
 
     <!-- ====================== Swiper Js =========================== -->
-    <script src="swiper-bundle.min.js"></script>
+     <script src="swiper-bundle.min.js"></script>
+     <!-- ====================== Send Mail ======================== -->
+     <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+  
 
     <!-- =====================MAIN JS============================= -->
     <script src="script.js"></script>
+    <!-- =======================sweet alert======================= -->
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 </html>

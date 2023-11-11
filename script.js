@@ -180,4 +180,36 @@ function navHighlighter()
 }
 
 
+//  ================================== Frome submit =====================================
+
+function send(){
+
+    let name = document.getElementsByClassName("name").value;
+    let email = document.getElementsByClassName("email").value;
+    let phone = document.getElementsByClassName("phone").value;
+    let message = document.getElementsByClassName("message").value;
+
+    let body = "Name :" + name + "<br/> Email :" + email + "<br/> Email :" + phone + "<br/> Email :" + message;
+    console.log(body)
+
+    email.send({
+
+        Host : "smtp.elasticemail.com",
+        Username : "mdtuhinhelal20@gmail.ocm",
+        Password : "hkmr fzti lncr cmt",
+        To : 'mdtuhinhelal21@gmail.com',
+        From : "mdtuhinhelal20@gmail.ocm",
+        Subject : "This is the subject",
+        Body : body
+    }).then(
+      message => {
+        if(message == 'OK'){
+            swal("Successfull", "Your Data Successfully Received", "success");
+        }
+        else{
+            swal("Someting Wrong", "Your Data is not Received", "error"); 
+        }
+      }
+    );
+}
     
